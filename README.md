@@ -73,10 +73,7 @@
 
 
 ## Entrega Final:
-
-
 ### El Proyecto Integrador debe incluir todos los temas vistos en el Curso.
-
 
 
 ---
