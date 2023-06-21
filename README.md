@@ -14,7 +14,7 @@
 ## Temas Incluidos
 
 
-### 1er Entrega
+### 1er Fase con Entrega
 
 
 ```ssh
@@ -28,7 +28,7 @@
 ```
 
 
-### 2da Entrega
+### 2da Fase con Entrega
 
 
 ```ssh
@@ -42,7 +42,7 @@
 ```
 
 
-### 3er Entrega
+### 3er Fase con Entrega
 
 
 ```ssh
@@ -55,9 +55,7 @@
  12. Operadores avanzados 
 ```
 
-### 4ta Entrega
-
-
+### 4ta Fase
 
 
 
