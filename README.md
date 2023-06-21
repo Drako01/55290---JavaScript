@@ -1,5 +1,8 @@
-# Bienvenidos a la Comisión #55290
+<p align="center"> 
+    <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
+</p>
 
+# Bienvenidos a la Comisión #55290
 
 
 <p align="center"> 
