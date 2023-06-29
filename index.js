@@ -1,46 +1,47 @@
-let letra = "c" // Le asignamos con un string que va con comillas
-let letras = "d"
+// if (true){
+//     console.log("Es verdadero") // Este codigo si se va a ejecutar
+// }
 
-letra = "e"
-letra = "f"
-let g = "Hola"
-letra = 5 // 5 es un Number y no lleva comillas - Eso lo diferencia de un String como por ejemplo "5"
+// if (false){
+//     console.log("Esto es Falso") // Este codigo no se va a ejecutar
+// }
 
-const numerito = '0'
+// const numero = 0 // Un solo = Significa Asignacion
+// console.log(numero)
 
-const numerito5 = 0
+// if ( numero != 0 ){ // Dos == Significa Igual
+//     console.log("Es verdadero, a Vale: " + numero)
+// } else {
+//     console.log("Es Falso, numero Vale = " + numero)
+// }
 
+// let nombreUsuario = prompt("Ingrese su Nombre")
 
+// if ( nombreUsuario != "" ) {
+//     alert("Bienvenido " + nombreUsuario)
+// } else { 
+//     alert("No ha ingresado nada.!")
+// }
 
-//console.log(letra)
-//console.log(numerito)
+const number = prompt("Ingrese un Numero")
 
+if ( number == 0 ){
+    console.log("Usted ingreso el Numero " + number)
+} else if ( number < 0 ) {
+    console.log("Usted ingreso un Numero negativo")
+} else if ( number > 0 ) {
+    console.log("Usted ingreso un Numero positivo")
+} else {
+    console.log("Usted no ingreso un Numero Valido")
+}
 
-// let nombreUsuario = prompt("Ingrese su nombre")
-
-// console.log(nombreUsuario)
-
-
-// let nombreUsuario1 = "Su nombre es Pirulo"
-
-// console.log(nombreUsuario1)
-
-// alert("Hola Gente " + nombreUsuario)
-
-// let nombreUsuario = prompt("Ingrese su nombre")
-// alert("Su nombre es: " + nombreUsuario)
-
-// let usuario = prompt("Ingrese su nombre y apellido")
-
-// alert("hola! bienvenido " + usuario)
-// let añoActual = new Date().getFullYear();
-
-// let añoNacimiento = prompt("¿En que año naciste?");
-
-// let edad = añoActual - añoNacimiento;
-// alert("Tienes " + edad + " años.");
-
-let nombre = prompt("Bienvenido, ingrese su nombre para comenzar su registro")
-let apellido = prompt("Bienvenido " + nombre + ", ingrese su apellido")
-let correoElectronico = prompt("Muy bien " + nombre + ", ingrese su correo electronico para finalizar su registro")
-alert("Su registro se ha realizado con exito, en instantes recibira la confirmacion en su correo electronico:" + correoElectronico)
+// Ejercicio 1:
+// Escribe un script que solicite al usuario un número e imprima en la consola si ese número es positivo, negativo o cero.
+// Ejercicio 2:
+// Escribe un script que solicite al usuario dos números e imprima en la consola el número mayor de los dos.
+// Ejercicio 3:
+// Escribe un script que solicite al usuario su edad e imprima en la consola si es mayor de edad o no (considerando 18 años como la mayoría de edad).
+// Ejercicio 4:
+// Escribe un script que solicite al usuario un número e imprima en la consola si ese número es par o impar.
+// Ejercicio 5:
+// Escribe un script que solicite al usuario tres números e imprima en la consola el número más grande de los tres.
