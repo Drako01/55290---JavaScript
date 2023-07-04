@@ -62,7 +62,7 @@
 //     console.log("NO INGRESASTE NADA")
 // }
 
-// const number = prompt("Ingrese un numero")
+const number = prompt("Ingrese un numero")
 
 // if (number == 0) {
 //     console.log("Ustede eligió el número " + number)
@@ -71,6 +71,24 @@
 // } else {
 //     console.log ("Usted eligió un número negativo")
 // }
+
+if (number === null) {
+    console.log("Usted canceló la operación");
+} else if (number === "") {
+    console.log("Usted no ingresó ningún número");
+} else if (isNaN(number)) {
+    console.log("Usted ingresó un valor no numérico");
+} else if (number == 0) {
+    console.log("Usted ingresó el número 0");
+} else if (number < 0) {
+    console.log("Usted ingresó un número negativo");
+} else if (number > 0) {
+    console.log("Usted ingresó un número positivo");
+} else {
+    console.log("Usted ingresó un número inválido");
+}
+
+
 
 // const number1 = 0
 // const number2 = 2
@@ -94,9 +112,20 @@
 // }
 
 
-let nombre = prompt("Ingrese un Nombre")
-if ((nombre != "") && (nombre == "ANA") || (nombre == "ana")){
-    alert("El nombre ingresado es Ana")
-} else {
-    alert("Error al ingresar el Nombre")
-}
+// let nombre = prompt("Ingrese un Nombre")
+// if ((nombre != "") && (nombre == "ANA") || (nombre == "ana")){
+//     alert("El nombre ingresado es Ana")
+// } else {
+//     alert("Error al ingresar el Nombre")
+// }
+
+// let numero = parseInt("5")
+// console.log(numero)
+
+// let number = parseInt(prompt("Ingrese un numero"))
+// if (isNaN(number)){
+//     console.log(number + " Esto no es un numero")
+// } else {
+//     console.log(number)
+// }
+
