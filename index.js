@@ -58,24 +58,40 @@
 
 // Hagamos una Calculadora
 
-function calculadora( num1 , operacion , num2  ){
-    switch ( operacion ){
-        case "+":
-            return num1 + num2;
-            break;
-        case "-":
-            return num1 - num2;
-            break;
-        case "*":
-            return num1 * num2;
-            break;
-        case "/":
-            return num1 / num2;
-            break;
-        default:
-            return 0;
-            break;
-    }
-}
+// function calculadora(num1, operacion, num2) {
+//     // Evitemos la division por 0
+//     if (operacion === "/" && num2 === 0) {
+//         return console.error("NO SE PUEDE DIVIDIR POR CERO.!!!!")
+//     }
+//     switch (operacion) {
+//         case "+":
+//             return num1 + num2;
+//             break;
+//         case "-":
+//             return num1 - num2;
+//             break;
+//         case "*":
+//             return num1 * num2;
+//             break;
+//         case "/":
+//             return num1 / num2;
+//             break;
+//         default:
+//             return 0;
+//             break;
+//     }
+// }
 
-console.log(calculadora(15 , "-" , 6))
+// console.log(calculadora(10, "/", 0))
+
+// const suma = function ( a, b ) { return a + b } // Funcion Anonima > Se asigna a una Variable Globla o Local
+// const resta = function ( a , b ) { return a - b }
+// console.log(suma(22,35))
+// console.log(resta(22,35))
+
+
+// Funcion Flecha > Nace a partir de ES6
+
+const suma = (a ,b) => { return a + b }
+console.log(suma(22,35))
+
