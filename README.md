@@ -1,4 +1,4 @@
-# Comisión 55290---JavaScript
+# Comisión 55290 --- JavaScript
 
 Repositorio para uso exclusivo de los Alumnos de la Comisión #55290 de CoderHouse
 
