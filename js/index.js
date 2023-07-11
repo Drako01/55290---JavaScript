@@ -36,25 +36,86 @@
 // console.warn(persona1)
 
 // Definimos una Funcion Constructora
-function Persona(nombre, apellido, edad, pais) {
-    this.nombre = nombre
-    this.apellido = apellido
-    this.edad = edad
-    this.pais = pais
+// function Persona(nombre, apellido, edad, pais) {
+//     this.nombre = nombre
+//     this.apellido = apellido
+//     this.edad = edad
+//     this.pais = pais
+// }
+
+// const persona = new Persona("Alejandro", 
+//                     "Delgado", 
+//                     39, 
+//                     "Argentina"
+//                     )
+
+// console.log(persona)
+
+// const persona1 = new Persona("Nicolas", 
+//                     "Tomatis", 
+//                     31, 
+//                     "Argentina"
+//                     )
+
+// console.log(persona1)
+
+// Otra forma de Definir un Objeto
+function Persona(objeto) {
+    this.nombre = objeto.nombre
+    this.apellido = objeto.apellido
+    this.edad = objeto.edad
+    this.pais = objeto.pais
 }
 
-const persona = new Persona("Alejandro", 
-                    "Delgado", 
-                    39, 
-                    "Argentina"
-                    )
+const persona1 = new Persona( // Nueva INSTANCIA de Persona
+    {
+        nombre: "Nicolas",
+        apellido: "Tomatis",
+        edad: 31,
+        pais: "Argentina"
+    }
+)
+const persona2 = new Persona(
+    {
+        nombre: "Diego",
+        apellido: "Torres",
+        edad: 50,
+        pais: "Argentina"
+    }
+)
+const persona3 = new Persona(
+    {
+        nombre: "Nicolas",
+        apellido: "Tomatis",
+        edad: 31,
+        pais: "Argentina"
+    }
+)
+const persona4 = new Persona(
+    {
+        nombre: "Lionel",
+        apellido: "Messi",
+        edad: 36,
+        pais: "Argentina"
+    }
+)
+console.log(persona1, persona2, persona3)
+console.error(persona4)
 
-console.log(persona)
+function Auto(objeto){ // Me pide un Objeto
+    this.chasis = objeto.chasis
+    this.motor = objeto.motor
+    this.color = objeto.color
+    this.marca = objeto.marca
+}
 
-const persona1 = new Persona("Nicolas", 
-                    "Tomatis", 
-                    31, 
-                    "Argentina"
-                    )
+const auto1 = new Auto(
+    {
+        chasis: 155665232355,
+        motor: 1.6,
+        color: "Azul",
+        marca: "Ford"
+    }
+)
 
-console.log(persona1)
+console.log(auto1)
