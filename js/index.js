@@ -194,10 +194,20 @@ class Auto{
 
 const autito = new Auto(
     "Ford Mustang",
-    2023,
+    2021,
     "Gris Plomo"
 )
 
 console.log(autito)
 autito.mostrarMarca()
 autito.mostrarModelo()
+
+const autito1 = new Auto(
+    "Ferrari",
+    2023,
+    "Roja"
+)
+
+console.log(autito1)
+autito1.mostrarMarca()
+autito1.mostrarModelo()
