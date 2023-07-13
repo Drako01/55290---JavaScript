@@ -8,12 +8,18 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-h1{
+h1, h2{
     font-size: 3rem;
     font-weight: 600;
     color: #080000;
     padding: 3rem;
     text-align: center;
+}
+h2{
+    color: brown;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding-bottom: 0;
 }
 .logo{
     display: flex;
