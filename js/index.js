@@ -140,65 +140,74 @@ arraySeis.push(
 // Uso de Clases
 
 class Producto {
-    constructor(id, nombre, precio) {
-        this.id = id
-        this.nombre = nombre.toUpperCase()
-        this.precio = parseFloat(precio)
-        this.stock = false
+    constructor(id, nombre, precio, stock) { // Habia que agregar el parametro stock
+        this.id = id;
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.stock = stock; // Asignarle el parametro stock a la variable
     }
     obtenerPrecio() {
-        console.log("El precio del producto: " + this.nombre + " es:" + this.precio + "$ ARS")
+        console.log("El precio del producto " + this.nombre + " es: $" + this.precio.toFixed(2) + " ARS");
     }
     obtenerStock() {
-        if(this.stock === true) {
-            console.log("hay Stock de: " + this.nombre)
+        if (this.stock === true) {
+            console.log("Hay stock de: " + this.nombre);
         } else {
-            console.log("No hay Stock de: " + this.nombre)
+            console.log("No hay stock de: " + this.nombre);
         }
     }
     calcularPrecioConIVA() {
-        this.precio = this.precio * 1.21
+        const precioConIVA = this.precio * 1.21;
+        return precioConIVA.toFixed(2); // Faltaba asignarlo a una variable y que la retorne. .toFixed(2) me muestra solo 2 Decimales.
     }
 }
 
-const productos = []
+const productos = [];
 
 productos.push(
     new Producto(
         1,
         "Azucar",
         425.50,
+        false // cada producto tiene que tener si stock = true o false
     )
-)
+);
 productos.push(
     new Producto(
         2,
         "Leche",
         525.50,
+        false // cada producto tiene que tener si stock = true o false
     )
-)
+);
 productos.push(
     new Producto(
         3,
         "Maiz",
         125.50,
-        true // Corregir
+        true // cada producto tiene que tener si stock = true o false
     )
-)
+);
+productos.push(
+    new Producto(
+        4,
+        "Mermelada",
+        658.70,
+        true // cada producto tiene que tener si stock = true o false
+    )
+);
 
+console.log(productos);
 
-
-console.log(productos)
-
-for ( const prod of productos ) {
-    prod.obtenerPrecio()
+for (const prod of productos) {
+    prod.obtenerPrecio();
 }
 
-for ( const prod of productos ) {
-    prod.obtenerStock()
+for (const prod of productos) {
+    prod.obtenerStock();
 }
 
-for ( const prod of productos ) {
-    console.log(prod.calcularPrecioConIVA()) // Corregir
+for (const prod of productos) {
+    const precioConIVA = prod.calcularPrecioConIVA();
+    console.log("El precio con IVA del producto " + prod.nombre + " es: $" + precioConIVA + " ARS");
 }
-
