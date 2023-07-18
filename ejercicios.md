@@ -1,41 +1,47 @@
-# Ejercicios usando Arrays
+## Ejercicios usando Funciones de Orden Superior
 
-* Crea una función que reciba un array de números y devuelva la suma de todos los elementos.
+<br>
 
-* Escribe una función que tome un array de palabras y devuelva un nuevo array con la longitud de cada palabra.
+* Usa forEach para imprimir cada elemento de un array de números.
 
-* Implementa una función que tome un array de números y devuelva un nuevo array con solo los números pares.
+* Utiliza find para encontrar el primer número mayor que 50 en un array de números.
 
-* Crea una función que reciba un array de nombres y devuelva un nuevo array con solo los nombres que comiencen con una letra específica.
+* Emplea filter para obtener todos los números pares de un array de números.
 
-* Escribe una función que tome un array de números y devuelva el número más grande.
+* Utiliza some para verificar si un array de palabras contiene al menos una palabra de más de 10 caracteres.
 
-* Implementa una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva un nuevo array con solo los objetos que tengan una edad mayor a 18.
+* Usa map para duplicar cada elemento de un array de números.
 
-* Crea una función que tome un array de números y devuelva la suma de todos los números negativos.
+* Emplea reduce para obtener la suma de todos los elementos de un array de números.
 
-* Escribe una función que tome un array de strings y devuelva un nuevo array con solo los strings que tengan más de 5 caracteres.
+* Utiliza sort para ordenar un array de palabras alfabéticamente.
 
-* Implementa una función que tome un array de objetos con propiedades "nombre" y "apellido", y devuelva un nuevo array con solo los objetos que tengan el mismo apellido.
+* Crea una clase Alumno con las propiedades "nombre", "edad" y "notas" (un array de números). Crea varios objetos Alumno y realiza operaciones con ellos (calcular promedio de notas, encontrar el alumno con la mejor nota, etc.) utilizando funciones de orden superior.
 
-* Crea una función que tome un array de números y devuelva un nuevo array con solo los números impares multiplicados por 2.
+* Utiliza map para convertir un array de temperaturas en grados Celsius a grados Fahrenheit.
 
-* Escribe una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva la edad promedio de todos los objetos.
+* Emplea filter para obtener todos los objetos de un array de productos que tengan un precio mayor a $50.
 
-* Implementa una función que tome un array de strings y devuelva un nuevo array con solo los strings que contengan una letra específica.
+* Usa forEach para imprimir la tabla de multiplicar de un número específico (por ejemplo, 5).
 
-* Crea una función que tome dos arrays y devuelva un nuevo array con los elementos comunes a ambos.
+* Utiliza find para encontrar el primer objeto producto con un descuento mayor al 30% en un array de productos.
 
-* Escribe una función que tome un array de objetos con propiedades "nombre" y "puntuación", y devuelva el objeto con la puntuación más alta.
+* Emplea some para verificar si hay al menos un alumno con edad menor a 18 años en un array de objetos Alumno.
 
-* Implementa una función que tome un array de números y devuelva un nuevo array con solo los números distintos (eliminando los duplicados).
+* Usa reduce para obtener el producto de todos los elementos de un array de números.
 
-* Crea una función que tome un array de strings y devuelva un nuevo array con las palabras en orden alfabético.
+* Utiliza sort para ordenar un array de fechas en orden ascendente.
 
-* Escribe una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva un nuevo array con solo los nombres ordenados alfabéticamente.
+* Emplea map para obtener un array de objetos con las edades de los alumnos en años-luz (dividiendo la edad en años por 9.46 trillones, que es la cantidad de kilómetros que recorre la luz en un año).
 
-* Implementa una clase "Estudiante" que tenga las propiedades "nombre", "edad" y "cursos" (un array de strings). Crea varios objetos "Estudiante" y realiza operaciones con ellos (agregar cursos, obtener la cantidad de cursos, etc.).
+* Utiliza filter para obtener todos los números primos de un array de números.
 
-* Crea una clase "Calculadora" que tenga un array de números como propiedad. La clase debe tener métodos para sumar todos los números, restar todos los números y devolver el promedio de todos los números.
+* Emplea reduce para obtener el promedio de las edades de un array de objetos Alumno.
 
-* Implementa una clase "Tienda" que tenga una propiedad "productos" (un array de objetos) y métodos para agregar productos, eliminar productos y buscar productos por nombre.
+* Usa forEach para imprimir todos los días de la semana en inglés.
+
+* Utiliza sort para ordenar un array de objetos producto por precio de forma ascendente.
+
+<p align="center"> 
+    <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
+</p>
