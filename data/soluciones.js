@@ -208,3 +208,15 @@ const arrayProductos4 = [
 
 arrayProductos4.sort((a, b) => a.precio - b.precio);
 console.log(arrayProductos4); // Salida por Consola: [{ nombre: 'Sombrero', precio: 20 }, { nombre: 'Camisa', precio: 30 }, { nombre: 'Pantalón', precio: 60 }, { nombre: 'Zapatos', precio: 80 }]
+
+// Expresar el siguiente script en una sola linea de codigo:
+
+// let total = 0
+// for (let i = 1; i <= 10; i++) {
+//     total += i
+// }
+// console.log(total)
+
+// Respuesta:
+
+const total = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, curr) => acc + curr, 0);

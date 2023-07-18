@@ -42,6 +42,17 @@
 
 * Utiliza sort para ordenar un array de objetos producto por precio de forma ascendente.
 
+* Expresar el siguiente script en una sola linea de codigo:
+
+```js	
+    let total = 0
+    for (let i = 1; i <= 10; i++) {
+        total += i
+    }
+    console.log(total)
+```
+
+
 <p align="center"> 
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
 </p>
