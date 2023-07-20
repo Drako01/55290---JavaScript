@@ -42,6 +42,15 @@
 
 * Obtener el número de segundos que han pasado desde el inicio del año.
 
+<!-- Ejercicio Adicional -->
+
+* Crea una función llamada generadorNumero que no tome ningún parámetro. Esta función debe devolver un número entero aleatorio entre 0 y 100.
+
+    Crea una función llamada variosNumeros que tome dos parámetros: generador y cantidad. La función variosNumeros debe mostrar en la consola cantidad números generados utilizando la función generador.
+
+    Ejecuta la función variosNumeros con el generador generadorNumero y la cantidad de X números.
+    
+<!-- Ejercicio Adicional -->
 
 <p align="center"> 
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>

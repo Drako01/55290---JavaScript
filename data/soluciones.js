@@ -133,3 +133,18 @@
 // const timeDifference = currentDate - startOfYear;
 // const secondsPassed = Math.floor(timeDifference / 1000);
 // console.log(secondsPassed);
+
+
+// // 21  Ejercicio Adicional:
+
+// const generadorNumero = () => {
+//     return Math.round(Math.random() * 100);
+// }
+
+// const variosNumeros = (generador, cantidad) => {
+//     for (let i = 0; i < cantidad; i++) {
+//         console.log("El numero generado es: " + generador());
+//     }
+// }
+
+// variosNumeros(generadorNumero, 10);
