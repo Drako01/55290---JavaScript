@@ -7,6 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230, 218, 255, 0.75) 35%, rgba(203,246,255,0.77) 100%);
 }
 h1, h2{
     font-size: 3rem;
@@ -25,10 +27,20 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
 
 }
 .logo img{
-    width: 30rem;
-    height: 30rem;;    
+    width: 20rem;
+    height: 20rem;;    
+}
+footer p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 900;
 }

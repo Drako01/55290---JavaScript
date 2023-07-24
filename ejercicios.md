@@ -1,56 +1,51 @@
-## Ejercicios usando Funciones de Orden Superior II
+## Ejercicios Manipulando el DOM
 
 <br>
 
-* Generar un número aleatorio entre 1 y 100.
+* Cambiar el contenido de un elemento por su ID.
 
-* Redondear el número 4.89 al entero más cercano.
+* Cambiar el contenido de un elemento por su clase.
 
-* Calcular la raíz cuadrada de 25.
+* Cambiar el contenido de un elemento por su etiqueta.
 
-* Obtener el valor absoluto de -15.
+* Agregar un elemento nuevo a través de su ID.
 
-* Obtener el valor máximo entre 4, 18 y 10.
+* Contar la cantidad de elementos con una clase específica.
 
-* Obtener el valor mínimo entre 5, 13 y 7.
+* Cambiar el color de fondo de un elemento por su ID.
 
-* Generar un número decimal aleatorio entre 0 y 1.
+* Cambiar el color de fondo de todos los párrafos.
 
-* Redondear hacia abajo el número 6.7.
+* Mostrar u ocultar un elemento con su ID.
 
-* Redondear hacia arriba el número 3.2.
+* Crear una lista a partir de un array de nombres.
 
-* Obtener la fecha actual.
+* Cambiar el tamaño de fuente de un elemento por su clase.
 
-* Obtener el día del mes actual.
+* Crear un elemento nuevo y agregarlo al final de la lista.
 
-* Obtener el mes actual (como número, donde enero es 0 y diciembre es 11).
+* Crear un elemento nuevo y agregarlo al principio de la lista.
 
-* Obtener el año actual.
+* Crear un elemento div con una clase y agregarlo al body.
 
-* Obtener la hora actual.
+* Crear un elemento div con una clase y un id y agregarlo al body.
 
-* Obtener los minutos actuales.
+* Crear un elemento div con una clase y un id y agregarlo al elemento div del punto anterior.
 
-* Obtener el último día del mes actual.
+* Agregar texto a un elemento div con una clase.
 
-* Obtener el número de días que faltan para Navidad (25 de diciembre).
+* Agregar texto a un elemento div con un id.
 
-* Obtener la fecha de mañana.
+* Crear un tag de tipo link y agregarlo al head.
 
-* Obtener el nombre del día de la semana actual.
+* Crear un tag de tipo link, agregarlo al head y cambiar el atributo href.
 
-* Obtener el número de segundos que han pasado desde el inicio del año.
+* Crar un footer, agregarlo al body y personalizarlo con un color de fondo y un color de texto. 
 
-<!-- Ejercicio Adicional -->
+* Al footer creado en el punto anterior, agregarle el metodo Date() para que muestre la fecha actual.
 
-* Crea una función llamada generadorNumero que no tome ningún parámetro. Esta función debe devolver un número entero aleatorio entre 0 y 100.
 
-    Crea una función llamada variosNumeros que tome dos parámetros: generador y cantidad. La función variosNumeros debe mostrar en la consola cantidad números generados utilizando la función generador.
 
-    Ejecuta la función variosNumeros con el generador generadorNumero y la cantidad de X números.
-    
-<!-- Ejercicio Adicional -->
 
 <p align="center"> 
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
