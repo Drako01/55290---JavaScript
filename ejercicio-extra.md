@@ -27,7 +27,6 @@ Asegúrate de tener el elemento <header id="header"></header> donde se colocará
 
 *   Utilizando JavaScript, crea una clase los elementos necesarios para construir la NavBar y agregar los enlaces dinámicamente. Como el elemento "navBar", "navDir" y "navUl", y un Array "navLinks" que contenga un Objeto donde sus key sean: page y link.
 
-
 *   Utiliza los métodos aprendidos para agregar los elementos creados al documento HTML. 
 La estructura de la NavBar debe seguir la jerarquía: navBar > navDir > navUl.
 
