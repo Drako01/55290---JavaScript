@@ -23,6 +23,14 @@ h2{
     letter-spacing: 3px;
     padding-bottom: 0;
 }
+.coderhouse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coderhouse img{
+    height: 100px;
+}
 .logo{
     display: flex;
     justify-content: center;
