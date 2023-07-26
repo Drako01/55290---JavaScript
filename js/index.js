@@ -9,6 +9,7 @@ const h2 = document.getElementsByTagName('H2')[0]
 const logo = document.getElementsByClassName('logo')[0]
 const producto = document.getElementById('producto')
 const cantidad = document.getElementById('cantidad')
+const input = document.getElementById('input')
 
 /// console.log(h2.innerHTML)
 titulo.innerText = 'Comisión #55290'
@@ -28,9 +29,11 @@ cuerpo.style.backgroundColor = 'black'
 prueba.remove()
 
 producto.value = 'Harina'
-
 producto.innerText = 'Producto'
 cantidad.innerText = 'Cantidad'
+
+input.value = 'Probando en Input.!!'
+console.log(input.value)
 
 producto.style.backgroundColor = 'yellow'
 
