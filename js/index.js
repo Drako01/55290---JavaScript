@@ -9,7 +9,8 @@ const h2 = document.getElementsByTagName('H2')[0]
 const logo = document.getElementsByClassName('logo')[0]
 const producto = document.getElementById('producto')
 const cantidad = document.getElementById('cantidad')
-const input = document.getElementById('input')
+const inputProd = document.getElementById('inputProducto')
+const inputCant = document.getElementById('inputCantidad')
 
 /// console.log(h2.innerHTML)
 titulo.innerText = 'Comisión #55290'
@@ -32,8 +33,6 @@ producto.value = 'Harina'
 producto.innerText = 'Producto'
 cantidad.innerText = 'Cantidad'
 
-input.value = 'Probando en Input.!!'
-console.log(input.value)
 
 producto.style.backgroundColor = 'yellow'
 
@@ -42,6 +41,9 @@ cantidad.style.color = 'white'
 producto.style.padding = '.5rem 1rem'
 cantidad.style.padding = '.5rem 1rem'
 
+inputProd.value = 'Probando en inputProd.!!'
+inputCant.value = 'Probando en inputCant.!!'
+console.log(inputProd.value)
 // cabecera
 
 // const links = [ 'Home', 'Contact', 'Location' ]
