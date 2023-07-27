@@ -52,3 +52,11 @@ footer a{
     color: brown;
     font-weight: 900;
 }
+.botones{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+}

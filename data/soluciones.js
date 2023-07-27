@@ -1,2 +1,2 @@
-// Manipulando el DOM
+// Ejercicios de Eventos
 
