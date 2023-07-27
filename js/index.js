@@ -7,8 +7,8 @@ const prueba = document.getElementById('prueba')
 const h1 = document.createElement('h1')
 const h2 = document.getElementsByTagName('H2')[0]
 const logo = document.getElementsByClassName('logo')[0]
-// const producto = document.getElementById('producto') // Boton
-// const cantidad = document.getElementById('cantidad') // Boton
+const producto = document.getElementById('producto') // Boton
+const cantidad = document.getElementById('cantidad') // Boton
 const inputProd = document.getElementById('inputProducto') // Input
 const inputCant = document.getElementById('inputCantidad') // Input
 
@@ -45,3 +45,10 @@ inputCant.value = 'Probando en inputCant.!!'
 // console.log(inputProd.value)
 
 // Eventos
+
+producto.addEventListener('click', hizoClick)
+function hizoClick() {
+    alert('El Usuario hizo Click.! En Producto')
+}
+
+cantidad.onclick = () => { alert('El Usuario hizo Click.! Con Cantidad') }
