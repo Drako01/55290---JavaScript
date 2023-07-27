@@ -7,10 +7,10 @@ const prueba = document.getElementById('prueba')
 const h1 = document.createElement('h1')
 const h2 = document.getElementsByTagName('H2')[0]
 const logo = document.getElementsByClassName('logo')[0]
-const producto = document.getElementById('producto')
-const cantidad = document.getElementById('cantidad')
-const inputProd = document.getElementById('inputProducto')
-const inputCant = document.getElementById('inputCantidad')
+// const producto = document.getElementById('producto') // Boton
+// const cantidad = document.getElementById('cantidad') // Boton
+const inputProd = document.getElementById('inputProducto') // Input
+const inputCant = document.getElementById('inputCantidad') // Input
 
 titulo.innerText = 'Comisión #55290'
 //h1.innerHTML = 'Hola Coders..!!!' // Agrego texto
