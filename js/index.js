@@ -52,3 +52,39 @@ function hizoClick() {
 }
 
 cantidad.onclick = () => { alert('El Usuario hizo Click.! Con Cantidad') }
+
+const boton4 = document.getElementById('boton4')
+
+boton4.onmousemove = () => { console.log('El Usuario Movio el Mouse sobre el Boton.!') }
+
+
+//CODIGO JS
+// let input1 = document.getElementById("nombre")
+// let input2 = document.getElementById("edad")
+// input1.onkeyup = () => {console.log("keyUp")}
+// input2.onkeydown = () => {console.log("keyDown")}
+
+// input1.onchange = () => (console.log(input1.value))
+// input2.onchange = () => (console.log(input2.value))
+
+// let input1  = document.getElementById("nombre")
+// input1.addEventListener('input', () => {
+//         console.log(input1.value)
+// })
+
+
+////////////////////////////////////////////
+
+// Formulario
+
+const myFormulario = document.getElementById('formulario')
+myFormulario.addEventListener('submit',  validarFormulario)
+
+function validarFormulario(e){
+    e.preventDefault();
+    let form = e.target
+    console.log(form.children[1].value) // Segundo hijo
+    console.log(form.children[3].value) // Cuarto hijo
+}
+
+console.log(validarFormulario())
