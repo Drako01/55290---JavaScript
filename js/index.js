@@ -83,8 +83,11 @@ myFormulario.addEventListener('submit',  validarFormulario)
 function validarFormulario(e){
     e.preventDefault();
     let form = e.target
+    let boton = form.children[4] // Quinto hijo "El Boton"
     console.log(form.children[1].value) // Segundo hijo
     console.log(form.children[3].value) // Cuarto hijo
+    boton.style.backgroundColor = 'white' 
+    boton.style.color = 'black'
 }
 
 console.log(validarFormulario())
