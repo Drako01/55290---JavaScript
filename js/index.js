@@ -93,8 +93,8 @@ function validarFormulario(e) {
                     <h3>Usuario: ${inputA}</h3>
                     <h3>Contraseña: ${inputB}</h3>`
 
-    if (inputA === '' && inputB === '') {
-        alert('Ingrese algún dato.');
+    if ((inputA && inputB) === '') {
+        alert('Ambos campos son Obligatorios.!!');
     } else {
         appendFromForm.innerHTML = relleno
         boton.style.backgroundColor = 'white';
