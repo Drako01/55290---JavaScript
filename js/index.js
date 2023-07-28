@@ -77,17 +77,24 @@ boton4.onmousemove = () => { console.log('El Usuario Movio el Mouse sobre el Bot
 
 // Formulario
 
-const myFormulario = document.getElementById('formulario')
-myFormulario.addEventListener('submit',  validarFormulario)
+const myFormulario = document.getElementById('formulario');
 
-function validarFormulario(e){
+myFormulario.addEventListener('submit', validarFormulario);
+
+function validarFormulario(e) {
     e.preventDefault();
-    let form = e.target
-    let boton = form.children[4] // Quinto hijo "El Boton"
-    console.log(form.children[1].value) // Segundo hijo
-    console.log(form.children[3].value) // Cuarto hijo
-    boton.style.backgroundColor = 'white' 
-    boton.style.color = 'black'
-}
 
-console.log(validarFormulario())
+    let form = e.target;
+    let inputA = form.children[1].value; // Segundo hijo
+    let inputB = form.children[3].value; // Cuarto hijo
+    let boton = form.children[4]; // Quinto hijo "El Boton"
+
+    if (inputA === '' && inputB === '') {
+        alert('Ingrese algún dato.');
+    } else {
+        console.log(inputA);
+        console.log(inputB);
+        boton.style.backgroundColor = 'white';
+        boton.style.color = 'black';
+    }
+}
