@@ -78,6 +78,7 @@ boton4.onmousemove = () => { console.log('El Usuario Movio el Mouse sobre el Bot
 // Formulario
 
 const myFormulario = document.getElementById('formulario');
+const appendFromForm = document.getElementById('append')
 
 myFormulario.addEventListener('submit', validarFormulario);
 
@@ -88,12 +89,14 @@ function validarFormulario(e) {
     let inputA = form.children[1].value; // Segundo hijo
     let inputB = form.children[3].value; // Cuarto hijo
     let boton = form.children[4]; // Quinto hijo "El Boton"
+    let relleno = ` <h1>Usted ingresó: </h1>
+                    <h3>Usuario: ${inputA}</h3>
+                    <h3>Contraseña: ${inputB}</h3>`
 
     if (inputA === '' && inputB === '') {
         alert('Ingrese algún dato.');
     } else {
-        console.log(inputA);
-        console.log(inputB);
+        appendFromForm.innerHTML = relleno
         boton.style.backgroundColor = 'white';
         boton.style.color = 'black';
     }
