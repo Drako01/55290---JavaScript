@@ -1,3 +1,10 @@
+const cabeza = document.head
+const titulo = document.createElement('title')
+
+titulo.innerText = 'Comisión #55290'
+cabeza.appendChild(titulo) 
+
+
 // Formulario
 
 const myFormulario = document.getElementById('formulario');
