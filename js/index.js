@@ -1,6 +1,7 @@
+const body = document.body
 const cabeza = document.head
 const titulo = document.createElement('title')
-
+const h1 = document.createElement('h1')
 titulo.innerText = 'Comisión #55290'
 cabeza.appendChild(titulo) 
 
@@ -19,7 +20,7 @@ function validarFormulario(e) {
     let inputA = form.children[1].value; // Segundo hijo
     let inputB = form.children[3].value; // Cuarto hijo
     let boton = form.children[4]; // Quinto hijo "El Boton"
-    let relleno = ` <h3>Usted ingresó: </h3>
+    let relleno = ` <h3>Bienvenido/a: </h3>
                     <h4>Usuario: ${inputA}</h4>
                     <h4>Contraseña: ${inputB}</h4>`
 
