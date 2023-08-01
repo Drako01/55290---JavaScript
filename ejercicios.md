@@ -59,9 +59,14 @@ Crea una lista de compras donde los usuarios puedan agregar, editar y eliminar e
 
 ---
 
-## Ejercicio Extra:
+## Ejercicios Extra:
 
 * Crea una pagina web en la que puedas optar por el modo oscuro o el modo claro, y que almacene la preferencia en el localStorage.
+
+* Generar 20 productos aleatorios y guardarlos en el localStorage. Para ello debes crear un metodo para generarlos y otro para guardarlos en el localStorage.
+
+
+A divertirse! :D
 
 
 <br>
