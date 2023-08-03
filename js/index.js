@@ -234,14 +234,14 @@ fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy;
 
 // Desestructuracion de Arrays
 
-const array = ["Alejandro", "Lucas", "Dylan", "Jose"]
+// const array = ["Alejandro", "Lucas", "Dylan", "Jose"]
+// console.error(array)
+// // const [ , , a , b ] = array
 
-// const [ , , a , b ] = array
+// // console.log( a, b )
 
-// console.log( a, b )
+// const arrayA = { ...a } = array // Spread Operator
+// console.log(arrayA) // No trae los indices de los elementos del Array
 
-const arrayA = { ...a } = array // Spread Operator
-console.log(arrayA) // No trae los indices de los elementos del Array
-
-const arrayB = { ...array }
-console.log(arrayB)// Viene con los indices de los elementos del Array
+// const arrayB = { ...array }
+// console.warn(arrayB)// Viene con los indices de los elementos del Array
