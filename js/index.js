@@ -245,3 +245,12 @@ fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy;
 
 // const arrayB = { ...array }
 // console.warn(arrayB)// Viene con los indices de los elementos del Array
+
+// let num = 0
+
+// num++
+// console.log(num)
+
+let variable = 2
+
+variable > 10 ? console.log("Es mayor a 10") : console.log("No es mayor a 10")
