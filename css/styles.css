@@ -52,11 +52,12 @@ footer a{
     color: brown;
     font-weight: 900;
 }
-.botones{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.botones{   
     gap: 1rem;
-    width: 400px;
+    min-width: 200px;
+}
+.footer{
+    position: sticky;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
 }
