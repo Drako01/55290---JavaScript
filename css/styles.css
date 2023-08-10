@@ -60,3 +60,10 @@ footer a{
     gap: 1rem;
     width: 400px;
 }
+
+.columnas{
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem;
+    gap: 1rem;
+}
