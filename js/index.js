@@ -56,7 +56,7 @@ links.forEach((nombre) => {
 })
 
 const sectionA = d.createElement('section')
-sectionA.classList = 'container-fluid'
+sectionA.className = 'container-fluid'
 sectionA.id = 'blablabla'
 main.appendChild(sectionA)
 
@@ -69,9 +69,10 @@ sectA.appendChild(h1Text)
 
 const sectionImg = d.createElement('section')
 sectionImg.className = 'logo'
-sectionImg.innerHTML = `<img src="/images/logo.png" alt="Logo de Coder">`
+sectionImg.innerHTML = `<img src="/images/logo.png" alt="Logo de JS">`
 
 sectA.appendChild(sectionImg)
+
 const anio = new Date().getFullYear(); /// 2023
 fotter.classList = 'coderhouse footer'
 fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy; CoderHouse | JavaScript | ${banner} | ${anio}</a>`
@@ -85,3 +86,41 @@ contenedorBoton.classList = 'container coderhouse'
 sectionA.appendChild(contenedorBoton)
 contenedorBoton.appendChild(boton)
 boton.type = 'submit';
+
+// Carrito Impovisado
+
+// Funcion que obtenga el carrito
+function getCartFromLocalStorage() {
+    const cartJson = localStorage.getItem('carrrito')
+    return JSON.parse(cartJson) || []
+}
+
+// Funcion que guarde el Carrito el el Local Storage
+function saveCartToLocalStorage(cart){
+    const cartJson = JSON.stringify(cart)
+    localStorage.setItem('carrrito', cartJson)
+}
+
+// Funcion que agregue productos al carrito
+function addToCart(product) {
+    const cart = getCartFromLocalStorage()
+    cart.push(product)
+    saveCartToLocalStorage(cart)
+}
+
+const producto1 = {
+    nombre: "Azucar",
+    precio: 800,
+    stock: 10
+}
+const producto2 = {
+    nombre: "Leche",
+    precio: 500,
+    stock: 100
+}
+
+addToCart(producto1)
+addToCart(producto2)
+
+const carrito = getCartFromLocalStorage()
+console.log('Los productos del Carrito son: ', carrito)
