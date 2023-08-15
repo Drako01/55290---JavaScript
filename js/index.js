@@ -11,4 +11,3 @@ const anio = new Date().getFullYear();
 fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy; CoderHouse | JavaScript | ${banner} | ${anio}</a>`
 
 // Asincronía y Callbacks
-
