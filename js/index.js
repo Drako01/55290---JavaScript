@@ -20,8 +20,22 @@ input.placeholder = 'Ingrese un Texto'
 divAjax.classList = 'container coderhouse div-busqueda'
 btn.classList = 'btn btn-primary busqueda'
 btn.innerText = 'Buscar'
+btn.type = 'submit'
 divAjax.append(input)
 divAjax.append(btn)
 
-// https://swapi.dev/
+/* COMENTARIOS IMPORTANTES:
+
+https://swapi.dev/api/
+https://mockapi.io/
+
+Asynchronous JavaScript and XML => AJAX
+API => Interfaz de Programacion de Aplicaciones
+.then() => Requiere como argumento una Funcion CallBack / Si la respuesta de la API es un JSON, entonces la respuesta.json() para que JS pueda interpretarlo
+Codigos de Respuestas => https://developer.mozilla.org/es/docs/Web/HTTP/Status
+Metodo GET no necesita el 2do Argumento
+JSON Formatter => https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+
+*/
+
 // Ajax y Fetch
