@@ -8,7 +8,7 @@ const banner = titulo.innerText = 'Comisión #55290'
 cabeza.appendChild(titulo)
 const fotter = d.querySelector('#p-footer');
 const anio = new Date().getFullYear();
-fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy; CoderHouse | JavaScript | ${banner} | ${anio}</a>`
+fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy CoderHouse | JavaScript | ${banner} | ${anio}</a>`
 
 // Creacion de Elementos para Clase de Ajax
 const divAjax = d.getElementById('ajax')
@@ -23,5 +23,5 @@ btn.innerText = 'Buscar'
 divAjax.append(input)
 divAjax.append(btn)
 
-
+// https://swapi.dev/
 // Ajax y Fetch
