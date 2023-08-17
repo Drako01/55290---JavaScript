@@ -11,23 +11,31 @@ const anio = new Date().getFullYear();
 fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy CoderHouse | JavaScript | ${banner} | ${anio}</a>`
 
 // Creacion de Elementos para Clase de Ajax
-const divAjax = d.getElementById('ajax')
-const input = d.createElement('input')
-const btn = d.createElement('button')
-input.classList = 'form-control'
-input.type = 'text'
-input.placeholder = 'Ingrese un Texto'
-divAjax.classList = 'container coderhouse div-busqueda'
-btn.classList = 'btn btn-primary busqueda'
-btn.innerText = 'Buscar'
-btn.type = 'submit'
-divAjax.append(input)
-divAjax.append(btn)
+// const divAjax = d.getElementById('ajax')
+// const input = d.createElement('input')
+// const btn = d.createElement('button')
+// input.classList = 'form-control'
+// input.type = 'text'
+// input.placeholder = 'Ingrese un Texto'
+// divAjax.classList = 'container coderhouse div-busqueda'
+// btn.classList = 'btn btn-primary busqueda'
+// btn.innerText = 'Buscar'
+// btn.type = 'submit'
+// divAjax.append(input)
+// divAjax.append(btn)
 
 /* COMENTARIOS IMPORTANTES:
 
 https://swapi.dev/api/
 https://mockapi.io/
+Promesas => https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises
+hazAlgo()
+    .then((resultado) => hazAlgoMas(resultado))
+    .then((nuevoResultado) => hazLaTerceraCosa(nuevoResultado))
+    .then((resultadoFinal) => {
+        console.log(`Obtenido el resultado final: ${resultadoFinal}`);
+    })
+    .catch(falloCallback);
 
 Asynchronous JavaScript and XML => AJAX
 API => Interfaz de Programacion de Aplicaciones
