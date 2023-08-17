@@ -33,6 +33,7 @@ Asynchronous JavaScript and XML => AJAX
 API => Interfaz de Programacion de Aplicaciones
 .then() => Requiere como argumento una Funcion CallBack / Si la respuesta de la API es un JSON, entonces la respuesta.json() para que JS pueda interpretarlo
 Codigos de Respuestas => https://developer.mozilla.org/es/docs/Web/HTTP/Status
+XML => https://developer.mozilla.org/es/docs/Web/XML/XML_introduction
 Metodo GET no necesita el 2do Argumento
 JSON Formatter => https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
 
