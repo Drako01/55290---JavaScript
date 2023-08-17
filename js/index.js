@@ -45,6 +45,9 @@ Codigos de Respuestas => https://developer.mozilla.org/es/docs/Web/HTTP/Status
 XML => https://developer.mozilla.org/es/docs/Web/XML/XML_introduction
 Metodo GET no necesita el 2do Argumento
 JSON Formatter => https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+* JS Nos permite hacer peticiones externas con el metodo fetch()
+Por ejemplo a una API
+Este metodo requiere de dos parametros, una URL y un Metodo
 
 */
 
