@@ -11,7 +11,7 @@ const anio = new Date().getFullYear();
 fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy CoderHouse | JavaScript | ${banner} | ${anio}</a>`
 
 // Creacion de Elementos para Clase de Ajax
-const formFind = d.getElementById('ajax')
+const formFind = d.getElementById('busqueda')
 const input = d.createElement('input')
 const btn = d.createElement('button')
 input.classList = 'form-control'
@@ -49,4 +49,3 @@ JSON Formatter => https://chrome.google.com/webstore/detail/json-formatter/bcjin
 */
 
 // Ajax y Fetch
-
