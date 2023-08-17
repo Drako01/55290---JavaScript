@@ -11,19 +11,20 @@ const anio = new Date().getFullYear();
 fotter.innerHTML = `<a href="https://www.coderhouse.com/" target="_blank">&copy CoderHouse | JavaScript | ${banner} | ${anio}</a>`
 
 // Creacion de Elementos para Clase de Ajax
-// const divAjax = d.getElementById('ajax')
-// const input = d.createElement('input')
-// const btn = d.createElement('button')
-// input.classList = 'form-control'
-// input.type = 'text'
-// input.placeholder = 'Ingrese un Texto'
-// divAjax.classList = 'container coderhouse div-busqueda'
-// btn.classList = 'btn btn-primary busqueda'
-// btn.innerText = 'Buscar'
-// btn.type = 'submit'
-// divAjax.append(input)
-// divAjax.append(btn)
-
+const formFind = d.getElementById('ajax')
+const input = d.createElement('input')
+const btn = d.createElement('button')
+input.classList = 'form-control'
+input.type = 'number'
+input.placeholder = 'Ingrese un Número'
+input.min = 0
+formFind.classList = 'container coderhouse div-busqueda'
+btn.classList = 'btn btn-primary busqueda'
+btn.innerText = 'Buscar'
+btn.type = 'submit'
+formFind.append(input)
+formFind.append(btn)
+const lista = document.querySelector('#listado');
 /* COMENTARIOS IMPORTANTES:
 
 https://swapi.dev/api/
@@ -48,3 +49,4 @@ JSON Formatter => https://chrome.google.com/webstore/detail/json-formatter/bcjin
 */
 
 // Ajax y Fetch
+
