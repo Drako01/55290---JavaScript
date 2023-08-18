@@ -29,7 +29,12 @@ const peticion1 = async () => {
     const data = await datos.results
     for (item of data) {
         const card = d.createElement('div')
-        const productId = item.id
+        const productData = {
+            id: item.id,
+            title: item.title,
+            price: item.price,
+            image: item.thumbnail
+        };
         card.innerHTML = `
         <div class="card" style="width: 18rem; height: 33rem;">
         <img class="card-img-top" src=${item.thumbnail} alt=${item.title}>
@@ -38,24 +43,25 @@ const peticion1 = async () => {
                 <p>${item.id}</p>
                 <p class="card-text">Proveedor: ${item.official_store_name}</p>
                 <p class="card-text">Precio: ${item.price}</p>
-                <button class="btn btn-secondary" id="add-to-cart-btn" data-product-id="${productId}">Agregar al Carrito</button>
+                <button class="btn btn-secondary" id="add-to-cart-btn" data-product='${JSON.stringify(productData)}'>Agregar al Carrito</button>
             </div>
         </div>            
         `
-        const addToCardButton = card.querySelector('#add-to-cart-btn')
-        addToCardButton.addEventListener('click', () => addToCard(productId))
-        cards.append(card)
+        const addToCartButton = card.querySelector('#add-to-cart-btn');
+        addToCartButton.addEventListener('click', () => addToCart(productData));
+
+        cards.append(card);
     }
 }
 peticion1()
 
-const addToCard = (productId) => {
-    let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [] 
-    if(!cart.includes(productId)) {
-        cart.push(productId)
-        localStorage.setItem('cart', JSON.stringify(cart))
-        console.log(`El producto con id: ${productId} fue agregado!`)
+const addToCart = (productData) => {
+    let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+    if (!cart.find(item => item.id === productData.id)) {
+        cart.push(productData);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log(`Producto con ID ${productData.id} agregado al carrito.`);
     } else {
-        console.log(`El producto con id: ${productId} No existe!`)
+        console.log(`El producto con ID ${productData.id} ya está en el carrito.`);
     }
-}
+};
