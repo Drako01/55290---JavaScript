@@ -35,6 +35,7 @@ const peticion1 = async () => {
             price: item.price,
             image: item.thumbnail
         };
+        const productInCart = JSON.stringify(productData)
         card.innerHTML = `
         <div class="card" style="width: 18rem; height: 33rem;">
         <img class="card-img-top" src=${item.thumbnail} alt=${item.title}>
@@ -43,7 +44,7 @@ const peticion1 = async () => {
                 <p>${item.id}</p>
                 <p class="card-text">Proveedor: ${item.official_store_name}</p>
                 <p class="card-text">Precio: ${item.price}</p>
-                <button class="btn btn-secondary" id="add-to-cart-btn" data-product='${JSON.stringify(productData)}'>Agregar al Carrito</button>
+                <button class="btn btn-secondary" id="add-to-cart-btn" data-product='${productInCart}'>Agregar al Carrito</button>
             </div>
         </div>            
         `
