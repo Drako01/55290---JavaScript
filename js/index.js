@@ -29,6 +29,7 @@ const peticion1 = async () => {
     const data = await datos.results
     for (item of data) {
         const card = d.createElement('div')
+        const productId = item.id
         card.innerHTML = `
         <div class="card" style="width: 18rem; height: 33rem;">
         <img class="card-img-top" src=${item.thumbnail} alt=${item.title}>
@@ -37,17 +38,24 @@ const peticion1 = async () => {
                 <p>${item.id}</p>
                 <p class="card-text">Proveedor: ${item.official_store_name}</p>
                 <p class="card-text">Precio: ${item.price}</p>
-                <a href="https://api.mercadolibre.com/sites/MLA/search?q=Samsung/${item.id}" class="btn btn-primary" id="compra-btn">Comprar Ahora</a>
+                <button class="btn btn-secondary" id="add-to-cart-btn" data-product-id="${productId}">Agregar al Carrito</button>
             </div>
         </div>            
         `
+        const addToCardButton = card.querySelector('#add-to-cart-btn')
+        addToCardButton.addEventListener('click', () => addToCard(productId))
         cards.append(card)
     }
 }
 peticion1()
 
-// const btnCompra = d.getElementById('compra-btn')
-// let array = []
-// btnCompra.addEventListener('click', () => {
-//     const producto = product.find(prod => ) 
-// })
+const addToCard = (productId) => {
+    let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [] 
+    if(!cart.includes(productId)) {
+        cart.push(productId)
+        localStorage.setItem('cart', JSON.stringify(cart))
+        console.log(`El producto con id: ${productId} fue agregado!`)
+    } else {
+        console.log(`El producto con id: ${productId} No existe!`)
+    }
+}
