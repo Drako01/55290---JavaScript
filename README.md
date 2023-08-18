@@ -7,5 +7,5 @@
     <img src="https://jobs.coderhouse.com/assets/logos_coderhouse.png" alt="CoderHouse"  height="100"/>
 </p>
 <p align="center">
-    <img src="./images/logo.png" alt="JavaScript" height="300">
+    <img src="./img/logo.png" alt="JavaScript" height="300">
 </p>
