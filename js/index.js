@@ -17,14 +17,14 @@ const btn = d.createElement('button')
 input.classList = 'form-control'
 input.type = 'number'
 input.placeholder = 'Ingrese un Número'
-input.min = 0
+input.min = 1
 formFind.classList = 'container coderhouse div-busqueda'
 btn.classList = 'btn btn-primary busqueda'
 btn.innerText = 'Buscar'
 btn.type = 'submit'
 formFind.append(input)
 formFind.append(btn)
-const lista = document.querySelector('#listado');
+const lista = d.querySelector('#listado');
 /* COMENTARIOS IMPORTANTES:
 
 https://swapi.dev/api/
@@ -52,3 +52,187 @@ Este metodo requiere de dos parametros, una URL y un Metodo
 */
 
 // Ajax y Fetch
+//fetch(url, metodo) // Recibe 2 parametros
+
+// Consulta a un Archivo interno con Formato JSON
+// fetch('/productos.json')
+//     .then((res) => res.json())
+//     .then((data) => {
+//         for( item of data ) {
+//             console.log(item)
+//         }
+//     })
+//     .catch((error) => (console.error(error)))
+
+// Consulta a la API de StarWars
+// fetch('https://swapi.dev/api/people')
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+// fetch('https://swapi.dev/api/people/1')
+//     .then((res) => res.json())
+//     .then((data) => {
+//         const li = document.createElement('li');
+//         li.innerHTML = `
+//             <h4>${data.name}</h4>
+//             <p>Hair Color: ${data.hair_color}</p>
+//             <p>Gender: ${data.gender}</p>
+//             <p>Eyes: ${data.eye_color}</p>
+//             <p>Birthday: ${data.birth_year}</p>
+//             <hr/>
+//         `;
+//         lista.append(li);
+//     })
+//     .catch((error) => {
+//         console.error('Error fetching data:', error);
+//     });
+
+// Consulta a la API de MockApi personalizada
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes')
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+/// Si quiero saber el Valor del Dolar hoy.!!
+// fetch("https://api.bluelytics.com.ar/v2/latest")
+//     .then((res) => res.json())
+//     .then((data) => {
+//         const dolar = d.getElementById('dolar')
+//         dolarValue = data.oficial;
+//         dolar.innerHTML =
+//             `<h4>Referencia del Dolar hoy:</h4>
+//             <li>Valor de Compra: $ ${dolarValue.value_avg}.- (ARS)</li>            
+//             <li>Valor de Venta: $ ${dolarValue.value_buy}.- (ARS)</li>   
+//             <hr/>         
+//             `
+//     })
+
+//     .catch((error) => dolar.innerHTML = `<li>${error}</li>`)
+
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes')
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes', 
+// {
+//     method: 'POST',
+//     body: JSON.stringify({
+//         first_name: 'Alejandro',
+//         last_name: 'Di Stefano',
+//         createdAt: new Date()
+//     }),
+//     headers: {
+//         "Content-Type":"application/json"
+//     }
+// })
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+// Desde el Formulario:
+const formUser = d.getElementById('form-users')
+const inputName = d.getElementById('name-imput')
+const inputLastName = d.getElementById('last-name-imput')
+
+// Creamos usuarios con el metodo POST
+// formUser.onsubmit = (e) => {
+//     e.preventDefault()
+
+//     fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes',
+//         {
+//             method: 'POST',
+//             body: JSON.stringify({
+//                 first_name: inputName.value,
+//                 last_name: inputLastName.value,
+//                 createdAt: new Date()
+//             }),
+//             headers: {
+//                 "Content-Type": "application/json"
+//             }
+//         })
+//         .then((res) => res.json())
+//         .then((data) => console.log(data))
+//         .catch((error) => (console.error(error)))
+
+// }
+
+// Modificar Usuarios con el Metodo PUT
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes/3')
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes/3',
+//     {
+//         method: 'PUT',
+//         body: JSON.stringify({
+//             first_name: 'Usuario',
+//             last_name: 'Cambiado',
+//             createdAt: new Date()
+//         }),
+//         headers: {
+//             "Content-Type": "application/json"
+//         }
+//     })
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes/')
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+
+// fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes/8',
+// {
+//     method:'DELETE'
+// })
+//     .then((res) => res.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => (console.error(error)))
+
+// formFind.onsubmit = (e) => {
+//     e.preventDefault()
+
+//     fetch(`https://swapi.dev/api/people/${input.value}`)
+//         .then((res) => res.json())
+//         .then((data) => {
+//             const li = document.createElement('li');
+//             li.innerHTML = `
+//             <h4>${data.name}</h4>
+//             <p>Hair Color: ${data.hair_color}</p>
+//             <p>Gender: ${data.gender}</p>
+//             <p>Eyes: ${data.eye_color}</p>
+//             <p>Birthday: ${data.birth_year}</p>
+//             <hr/>
+//         `;
+//             lista.append(li);
+
+//         })
+//         .catch((error) => (console.error(error)))
+// }
+
+
+// Busqueda por Query params
+// fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')
+// .then((res) => res.json()) 
+// .then((data) => console.log(data)) 
+// .catch((error) => (console.error(error)))
+
+
+/// Async Await
+
+const peticion = async () => {
+    const respuesta = await fetch('https://64dd48f6e64a8525a0f7cb2c.mockapi.io/estudiantes')
+    const datos = await respuesta.json()
+    console.log(datos)
+}
+
+peticion()
