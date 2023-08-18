@@ -87,6 +87,8 @@ footer a{
 }
 .card img{
     width: 16rem;
+    height: 14rem;
     padding: .5rem;
     margin-top: .5rem;
+    object-fit:contain;
 }
