@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230, 218, 255, 0.75) 35%, rgba(203,246,255,0.77) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(184, 163, 231, 0.75) 35%, rgba(203,246,255,0.77) 100%);
 }
 h1, h2{
     font-size: 3rem;
