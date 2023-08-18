@@ -261,3 +261,35 @@ const peticion2 = async () => {
 }
 
 peticion2()
+
+const peticion3 = async () => {
+    const respuesta = await fetch('/productos.json') 
+    const datos = await respuesta.json()
+    const data = await datos
+    for (item of data) {
+        const card = d.createElement('div')
+        card.innerHTML = `
+        <div class="card" style="width: 18rem; height: 32rem;">
+            <img class="card-img-top" src=${item.img} alt=${item.nombre}/>
+            <div class="card-body">
+                <h5 class="card-title">${item.nombre}</h5>
+                <p class="card-text">Clase: ${item.tipo}</p>
+                <p class="card-text">Talle: ${item.talle}</p>
+                <p class="card-text">Precio: $${item.precio}.-</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>     
+        </div>       
+        `
+        cards.append(card)
+    }
+}
+
+peticion3()
+
+const peticion4 = async () => {
+    const respuesta = await fetch('/productos.json')
+    const datos = await respuesta.json()
+    const data = await datos
+    console.log(data)
+}
+peticion4()

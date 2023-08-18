@@ -7,7 +7,8 @@
         "cantidad": 1, 
         "desc": "Estilo Azul", 
         "precio": 12000, 
-        "talle": "40"
+        "talle": "40", 
+        "img": "./img/zapatilla01.png"
     },
     { 
         "id": 2,
@@ -17,7 +18,8 @@
         "cantidad": 1, 
         "desc": "Estilo Gris", 
         "precio": 18500, 
-        "talle": "38"
+        "talle": "38", 
+        "img": "./img/zapatilla02.png" 
     },
     { 
         "id": 3,
@@ -27,7 +29,8 @@
         "cantidad": 1, 
         "desc": "Deportivas Verde", 
         "precio": 15600, 
-        "talle": "41"
+        "talle": "41", 
+        "img": "./img/zapatilla03.png" 
     },
     { 
         "id": 4,
@@ -37,7 +40,8 @@
         "cantidad": 1, 
         "desc": "Deportivas Blancas", 
         "precio": 16000, 
-        "talle": "42"
+        "talle": "42", 
+        "img": "./img/zapatilla04.png"
     },
     { 
         "id": 5,
@@ -47,7 +51,8 @@
         "cantidad": 1, 
         "desc": "Remera Lisa Blanca", 
         "precio": 2600, 
-        "talle": "L"
+        "talle": "L", 
+        "img": "./img/remera02.png"
     },
     { 
         "id": 6,
@@ -57,7 +62,8 @@
         "cantidad": 1, 
         "desc": "Remera Lisa Negra", 
         "precio": 2600, 
-        "talle": "XXS"
+        "talle": "XXS", 
+        "img": "./img/remera01.png"
     },
     { 
         "id": 7,
@@ -67,7 +73,8 @@
         "cantidad": 1, 
         "desc": "Remera Lisa Gris", 
         "precio": 2600, 
-        "talle": "L"
+        "talle": "L", 
+        "img": "./img/remera03.png"
     },
     { 
         "id": 8,
@@ -77,6 +84,7 @@
         "cantidad": 1, 
         "desc": "Deportivas Blancas", 
         "precio": 4500, 
-        "talle": "M"
+        "talle": "M", 
+        "img": "./img/remera04.png"
     }
 ]
