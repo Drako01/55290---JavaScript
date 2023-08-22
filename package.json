@@ -1,0 +1,16 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Javascript de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alejandro Di Stefano",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "luxon": "^3.4.1"
+  }
+}
